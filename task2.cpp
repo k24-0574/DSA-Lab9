@@ -15,7 +15,8 @@ class AVLTree{
     Node* root;
 
     int height(Node* node){
-        return node ? node->height : 0;
+        if(node==nullptr) return 0;
+        return node->height;
     }
 
     int balanceFactor(Node* node){
